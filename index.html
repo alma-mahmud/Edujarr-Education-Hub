@@ -44,7 +44,7 @@
     </div>
 </nav>
 <!-- Banner Section -->
-<section class="hero-banner">
+<section class="hero-banner relative before:absolute before:left-0 before:right-0 before:bottom-0 before:top-0 before:bg-[#04016C] before:-z-50 text-white py-20 overflow-hidden">
     <div class="custom-container grid lg:grid-cols-2 gap-10 items-center">
         
         <div>
@@ -61,15 +61,38 @@
             </div>
 
             <div class="bg-white rounded-lg p-2 flex max-w-lg shadow-xl">
-                <input type="text" placeholder="What do you want to learn today?" class="flex-grow px-4 py-3 text-gray-800 outline-none">
+                <input type="text" placeholder="What do you want to learn today?" class="grow px-4 py-3 text-gray-800 outline-none">
                 <button class="bg-[#4A16BD] text-white px-6 py-3 rounded-md font-bold">Search</button>
             </div>
         </div>
 
         <div class="relative flex justify-center">
-            <div class="w-full max-w-md h-[500px] bg-white/10 rounded-2xl border border-white/20 flex items-center justify-center italic text-white/50">
-                <img src="src/Images/Banner/banner.png" alt="">
-             </div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#005FFF] rounded-full blur-[150px] opacity-40 "></div>
+            
+            <div class="relative">
+                <img src="src/Images/Banner/banner.png" alt="Banner Image" class="max-w-full h-auto">
+                <img src="src/Images/Banner/bannaer1.png" class="absolute top-[0px] left-[0px] -z-10 " alt="">
+                
+                <div class="absolute top-10 -left-10 md:-left-20  p-4 rounded-xl shadow-2xl max-w-[240px] text-gray-800">
+                    <div class="flex items-start gap-3">
+                         <div class="bg-[#00CBB8] p-1 rounded-full text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.748-9.762 9-10.109V5c-2.934.342-4.346 1.487-4.63 4.307C18.159 9.112 17.57 9 16.914 9 14.752 9 13 10.752 13 12.914c0 2.162 1.752 3.914 3.914 3.914 1.233 0 2.321-.572 3.034-1.464l.052.417V21h-6zM0 21v-7.391c0-5.704 3.748-9.762 9-10.109V5c-2.934.342-4.346 1.487-4.63 4.307C4.159 9.112 3.57 9 2.914 9 0.752 9 -1 10.752 -1 12.914c0 2.162 1.752 3.914 3.914 3.914 1.233 0 2.321-.572 3.034-1.464l.052.417V21H0z"/></svg>
+                         </div>
+                         <div>
+                            <h4 class="font-bold text-sm">Ronald Richards</h4>
+                            <p class="text-[10px] text-gray-500 mt-1 leading-relaxed">In a coaching role, you ask the questions and rely more on your staff, who become the experts, to provide the information.</p>
+                            <div class="flex text-yellow-400 mt-2 text-[10px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                                <span class="text-gray-800 font-bold ml-1">4.9</span>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
